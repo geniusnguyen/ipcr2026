@@ -1,0 +1,19 @@
+# Core dependencies - Mac M1/M2 compatible versions
+# For Mac with Apple Silicon, install with: pip install -r requirements.txt
+# PyTorch will auto-detect and use Metal Performance Shaders (MPS) on Mac
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Image processing
+albumentations>=1.3.0
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# Utilities
+numpy>=1.24.0
+tqdm>=4.65.0
+
+# Optional: For better performance on Mac M1/M2, you can use conda instead:
+# conda install pytorch torchvision pytorch::cuda-none -c pytorch
+# or for native M1 support:
+# conda install pytorch::pytorch torchvision pytorch::pytorch-cuda=12.1 -c pytorch
